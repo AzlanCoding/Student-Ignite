@@ -24,7 +24,7 @@ client = gspread.authorize(credentials)
 
 
 # Open the spreadhseet
-sheet = client.open("Zalando Data").worksheet("zalando_data")
+sheet = client.open("Database 1").worksheet("Database 1")
 
 # Get a list of all records
 data = sheet.get_all_records()

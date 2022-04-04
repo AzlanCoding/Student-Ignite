@@ -1,1 +1,3 @@
 websockets
+gspread
+oauth2client.service_account

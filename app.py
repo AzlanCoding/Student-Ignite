@@ -11,7 +11,7 @@ import websockets
 
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
-from pprint import pprint
+#from pprint import pprint
 
 # scope of the application
 scope = ["https://spreadsheets.google.com/feeds", 'https://www.googleapis.com/auth/spreadsheets',
@@ -28,7 +28,7 @@ sheet = client.open("Database 1").worksheet("Database 1")
 
 # Get a list of all records
 data = sheet.get_all_records()
-pprint(data)
+#pprint(data)
 
 ###
 

@@ -3,12 +3,15 @@ from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtWebEngineWidgets import *
 import sys
+import ignite
+
 
 # creating main window class
 class MainWindow(QMainWindow):
 
     # constructor
     def __init__(self, *args, **kwargs):
+        block_list = ignite.get_blocklist_url()
         super(MainWindow, self).__init__(*args, **kwargs)
 
         # creating a QWebEngineView

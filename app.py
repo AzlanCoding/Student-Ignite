@@ -18,7 +18,7 @@ scope = ["https://spreadsheets.google.com/feeds", 'https://www.googleapis.com/au
          "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
 
 credentials = ServiceAccountCredentials.from_json_keyfile_name(
-    "/home/AzlanCoding/Student-Ignite/Cred.json", scope)
+    "/home/AzlanCoding/Student-Ignite/client_secret_717425861038-kiaha0986f92ugivrgg4evcqvem8718a.apps.googleusercontent.com.json", scope)
 
 client = gspread.authorize(credentials)
 

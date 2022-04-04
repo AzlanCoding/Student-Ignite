@@ -8,4 +8,6 @@ gunicorn==0.14.2
 requests==0.11.1
 websockets
 gspread
+asyncio
+os
 oauth2client.service_account

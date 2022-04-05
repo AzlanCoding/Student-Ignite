@@ -107,7 +107,7 @@ class MainWindow(QMainWindow):
         self.show()
 
         # setting window title
-        self.setWindowTitle("Geek PyQt5")
+        self.setWindowTitle("Ignite Browser")
 
     # method for adding new tab
     def add_new_tab(self, qurl = None, label ="Blank"):

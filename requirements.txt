@@ -9,5 +9,3 @@ requests
 websockets
 gspread
 asyncio
-os
-oauth2client.service_account

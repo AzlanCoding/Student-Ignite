@@ -1,11 +1,11 @@
 #import ignite
 # code from https://www.geeksforgeeks.org/creating-a-tabbed-browser-using-pyqt5/
 # importing required libraries
-from PyQt5.QtCore import *
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import *
-from PyQt5.QtWebEngineWidgets import *
-from PyQt5.QtPrintSupport import *
+from PyQt6.QtCore import *
+from PyQt6.QtWidgets import *
+from PyQt6.QtGui import *
+from PyQt6.QtWebEngineWidgets import *
+from PyQt6.QtPrintSupport import *
 import os
 import sys
 
@@ -77,6 +77,10 @@ class MainWindow(QMainWindow):
         # creating home action
         home_btn = QAction("Home", self)
         home_btn.setStatusTip("Go home")
+
+        ## Create new Tab action for ease of access
+        #tab_btn = QAction("add_new_tab", self)
+        #tab_btn.setStatusTip("new tab")
 
         # adding action to home button
         home_btn.triggered.connect(self.navigate_home)
@@ -181,7 +185,7 @@ class MainWindow(QMainWindow):
         title = self.tabs.currentWidget().page().title()
 
         # set the window title
-        self.setWindowTitle("% s - Geek PyQt5" % title)
+        self.setWindowTitle("% s - PyQt6 Web Engine" % title)
 
     # action to go to home
     def navigate_home(self):
@@ -218,14 +222,14 @@ class MainWindow(QMainWindow):
         # set cursor position
         self.urlbar.setCursorPosition(0)
 
-# creating a PyQt5 application
+# creating a PyQt6 application
 app = QApplication(sys.argv)
 
 # setting name to the application
-app.setApplicationName("Geek PyQt5")
+app.setApplicationName("Ignite Browser")
 
 # creating MainWindow object
 window = MainWindow()
 
 # loop
-app.exec_()
+app.exec()

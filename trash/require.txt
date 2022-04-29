@@ -1,0 +1,11 @@
+Flask
+Jinja2
+Werkzeug
+certifi
+chardet
+distribute
+gunicorn
+requests
+websockets
+gspread
+asyncio

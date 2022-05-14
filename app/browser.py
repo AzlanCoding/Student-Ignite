@@ -1,11 +1,12 @@
-#import ignite
 # code from https://www.geeksforgeeks.org/creating-a-tabbed-browser-using-pyqt5/
 # importing required libraries
+
 from PyQt6.QtCore import *
 from PyQt6.QtWidgets import *
 from PyQt6.QtGui import *
 from PyQt6.QtWebEngineWidgets import *
 from PyQt6.QtPrintSupport import *
+from PyQt6 import QtNetwork
 import os
 import sys
 
@@ -15,6 +16,13 @@ class MainWindow(QMainWindow):
     def __init__(self, *args, **kwargs):
         #block_list = ignite.get_blocklist_url()
         super(MainWindow, self).__init__(*args, **kwargs)
+
+        #Set Up Proxy
+        proxy =  QtNetwork.QNetworkProxy()
+        proxy.setType(QtNetwork.QNetworkProxy.ProxyType.HttpProxy)
+        proxy.setHostName("localhost")
+        proxy.setPort(8088)
+        QtNetwork.QNetworkProxy.setApplicationProxy(proxy)
 
         # creating a tab widget
         self.tabs = QTabWidget()
@@ -185,7 +193,7 @@ class MainWindow(QMainWindow):
         title = self.tabs.currentWidget().page().title()
 
         # set the window title
-        self.setWindowTitle("% s - PyQt6 Web Engine" % title)
+        self.setWindowTitle("% s - Ignite Browser" % title)
 
     # action to go to home
     def navigate_home(self):

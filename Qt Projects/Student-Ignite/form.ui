@@ -13,18 +13,7 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
-   <widget class="QCalendarWidget" name="calendarWidget">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>216</y>
-      <width>221</width>
-      <height>121</height>
-     </rect>
-    </property>
-   </widget>
-  </widget>
+  <widget class="QWidget" name="centralwidget"/>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
@@ -34,15 +23,14 @@
      <height>17</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuHome">
-    <property name="title">
-     <string>Home</string>
-    </property>
-   </widget>
    <widget class="QMenu" name="menuSettings">
     <property name="title">
      <string>Settings</string>
     </property>
+    <addaction name="actionProfile_Settings"/>
+    <addaction name="actionNotifications"/>
+    <addaction name="actionApps"/>
+    <addaction name="actionMore_Settings"/>
    </widget>
    <widget class="QMenu" name="menuApps">
     <property name="title">
@@ -60,15 +48,37 @@
     </property>
     <addaction name="actionStudent_Learning_Space_SLS"/>
     <addaction name="actionGoogle_Classroom"/>
+    <addaction name="actionQuzzlet_live"/>
+    <addaction name="actionQuizziz"/>
     <addaction name="separator"/>
+    <addaction name="actionEdit"/>
    </widget>
-   <addaction name="menuHome"/>
    <addaction name="menuSettings"/>
    <addaction name="menuApps"/>
    <addaction name="menuRevise"/>
    <addaction name="menuQuick_Links"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionProfile_Settings">
+   <property name="text">
+    <string>Profile Settings</string>
+   </property>
+  </action>
+  <action name="actionNotifications">
+   <property name="text">
+    <string>Notifications</string>
+   </property>
+  </action>
+  <action name="actionApps">
+   <property name="text">
+    <string>Apps</string>
+   </property>
+  </action>
+  <action name="actionMore_Settings">
+   <property name="text">
+    <string>More Settings</string>
+   </property>
+  </action>
   <action name="actionStudent_Learning_Space_SLS">
    <property name="text">
     <string>Student Learning Space (SLS)</string>
@@ -77,6 +87,21 @@
   <action name="actionGoogle_Classroom">
    <property name="text">
     <string>Google Classroom</string>
+   </property>
+  </action>
+  <action name="actionQuzzlet_live">
+   <property name="text">
+    <string>Quzzlet live</string>
+   </property>
+  </action>
+  <action name="actionQuizziz">
+   <property name="text">
+    <string>Quizziz</string>
+   </property>
+  </action>
+  <action name="actionEdit">
+   <property name="text">
+    <string>Edit</string>
    </property>
   </action>
  </widget>

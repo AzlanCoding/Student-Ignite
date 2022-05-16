@@ -1,11 +1,15 @@
 # This Python file uses the following encoding: utf-8
 import os
+from Ignite import flame
 from pathlib import Path
 import sys
-
 from PySide6.QtWidgets import QApplication, QMainWindow
-from PySide6.QtCore import QFile
+from PySide6.QtCore import QFile, QCoreApplication, Qt
 from PySide6.QtUiTools import QUiLoader
+
+core = flame()
+
+QCoreApplication.setAttribute(Qt.AA_ShareOpenGLContexts)
 
 
 class MainWindow(QMainWindow):
@@ -20,6 +24,9 @@ class MainWindow(QMainWindow):
         ui_file.open(QFile.ReadOnly)
         loader.load(ui_file, self)
         ui_file.close()
+
+    def open_url(self):
+        pass
 
 
 if __name__ == "__main__":

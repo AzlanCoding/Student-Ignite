@@ -1,3 +1,3 @@
-from Ignite import ignite
-ignite = ignite()
-print(ignite.get_blocklist())
+from Ignite import flame
+flame = flame()
+print(flame.test())

@@ -12,6 +12,8 @@ import logging
 import config
 import rule
 import tag as tag_store
+from Ignite import flame
+core = flame()
 
 p=re.compile('(http:\/\/)?([\w\.-]*)(\:(\d*))?(\/.*)?')
 thread_logger = logging.getLogger('thread')
@@ -19,7 +21,11 @@ access_logger = logging.getLogger('access')
 csv_logger = logging.getLogger('csv')
 
 def proxy(browser_conn, client_addr):
+    print("hi")
     def ishostAllowed(host):
+        print("\n\nHost:")
+        print(str(host))
+        access_logger.info(str(host))
         if host.split('.')[-1].isdigit():
             thread_logger.warn("Invalid host:".format(host),extra=req);            
             return False
@@ -32,7 +38,7 @@ def proxy(browser_conn, client_addr):
             if not rule.isTagAllowed(tag):
                 thread_logger.warn("{0}:{1} isn't allowed".format(host,tag),extra=req);
                 return False
-        return True
+        return core.check(host)
 
     def proxy_http(request):
         try:
@@ -60,7 +66,7 @@ def proxy(browser_conn, client_addr):
         return
     
     def response(status,message):
-        reply = "HTTP/1.0 {0} {1}\r\n"
+        reply = "HTTP/1.1 {0} {1}\r\n"
         reply += "Proxy-agent: Pcxy\r\n"
         reply += "\r\n"
         reply = reply.format(status,message);
@@ -179,7 +185,7 @@ def proxy(browser_conn, client_addr):
     if not ishostAllowed(req['host']):
         csv_logger.info("blocked",extra=req);
         thread_logger.warn("Block REQUEST:{0}".format(raw_data),extra=req);
-        response(403,"The website has been blocked by Ignite's proxy. See https://community.opendns.com/for information of blocke sites\nSource: Webfilter")
+        response(403,"The website has been blocked by Ignite's proxy.")
         return
 
     csv_logger.info("allowed",extra=req);

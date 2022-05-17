@@ -13,7 +13,8 @@ import config
 
 logger = logging.getLogger('proxy')
 
-def get(host):    
+def get(host):
+    logger.info(host)
     parent=host
     tags=None
     while parent is not None and tags is None:    

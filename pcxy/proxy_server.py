@@ -28,6 +28,7 @@ class Server:
         """ Wait for clients to connect """
         while True:
             (clientSocket, client_address) = self.serverSocket.accept()   # Establish the connection
+            print((clientSocket, client_address))
             d = threading.Thread(name=self._getClientName(client_address), target=pthread.proxy, args=(clientSocket, client_address))
             #d.setDaemon(True)
             d.start()

@@ -7,9 +7,13 @@ from PyQt6.QtGui import *
 from PyQt6.QtWebEngineWidgets import *
 from PyQt6.QtPrintSupport import *
 from PyQt6 import QtNetwork
+from Ignite import flame
 import os
 import sys
+import subprocess
 
+
+core = flame()
 # main window
 class MainWindow(QMainWindow):
 # constructor
@@ -135,6 +139,7 @@ class MainWindow(QMainWindow):
         # setting url to browser
         browser.setUrl(qurl)
 
+
         # setting tab index
         i = self.tabs.addTab(browser, label)
         self.tabs.setCurrentIndex(i)
@@ -240,4 +245,5 @@ app.setApplicationName("Ignite Browser")
 window = MainWindow()
 
 # loop
+pid1 = subprocess.Popen([sys.executable, "temp.pyw"])
 app.exec()

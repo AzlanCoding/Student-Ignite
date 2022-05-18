@@ -1,4 +1,5 @@
 # code from https://www.geeksforgeeks.org/creating-a-tabbed-browser-using-pyqt5/
+#Code modified by Azlan Chenlong
 # importing required libraries
 
 from PyQt6.QtCore import *
@@ -18,7 +19,6 @@ core = flame()
 class MainWindow(QMainWindow):
 # constructor
     def __init__(self, *args, **kwargs):
-        #block_list = ignite.get_blocklist_url()
         super(MainWindow, self).__init__(*args, **kwargs)
 
         #Set Up Proxy
@@ -27,6 +27,22 @@ class MainWindow(QMainWindow):
         proxy.setHostName("localhost")
         proxy.setPort(8088)
         QtNetwork.QNetworkProxy.setApplicationProxy(proxy)
+
+        #Check Cache for url
+        global url
+        try:
+            cache = open("IgniteBrowserCache.txt","r")
+            url = cache.read()
+            cache.close()
+            del cache
+        except FileNotFoundError:
+            pass
+
+        #reset cache file
+        cache = open("IgniteBrowserCache.txt","w")
+        cache.write("None")
+        cache.close()
+        del cache
 
         # creating a tab widget
         self.tabs = QTabWidget()
@@ -90,13 +106,15 @@ class MainWindow(QMainWindow):
         home_btn = QAction("Home", self)
         home_btn.setStatusTip("Go home")
 
-        ## Create new Tab action for ease of access
-        #tab_btn = QAction("add_new_tab", self)
-        #tab_btn.setStatusTip("new tab")
-
         # adding action to home button
         home_btn.triggered.connect(self.navigate_home)
         navtb.addAction(home_btn)
+        
+        # Create new Tab action for ease of access
+        newtab_btn = QAction("New Tab", self)
+        newtab_btn.setStatusTip("Create a new tab, double click in the tab space to do the same")
+        newtab_btn.triggered.connect(self.new_tab)
+        navtb.addAction(newtab_btn)
 
         # adding a separator
         navtb.addSeparator()
@@ -116,22 +134,28 @@ class MainWindow(QMainWindow):
         stop_btn.triggered.connect(lambda: self.tabs.currentWidget().stop())
         navtb.addAction(stop_btn)
 
+        #check if new url sent
+        if url == "None":
+            url = 'https://www.google.com'
+            
         # creating first tab
-        self.add_new_tab(QUrl('http://www.google.com'), 'Homepage')
+        self.add_new_tab(QUrl(url), 'Homepage')
 
         # showing all the components
         self.show()
 
         # setting window title
         self.setWindowTitle("Ignite Browser")
+    def new_tab(self):
+        self.add_new_tab()
 
     # method for adding new tab
     def add_new_tab(self, qurl = None, label ="Blank"):
 
         # if url is blank
         if qurl is None:
-                # creating a google url
-                qurl = QUrl('http://www.google.com')
+                # creating a google url or sent url
+                qurl = QUrl('https://www.google.com')
 
         # creating a QWebEngineView object
         browser = QWebEngineView()
@@ -204,7 +228,7 @@ class MainWindow(QMainWindow):
     def navigate_home(self):
 
         # go to google
-        self.tabs.currentWidget().setUrl(QUrl("http://www.google.com"))
+        self.tabs.currentWidget().setUrl(QUrl("https://www.google.com"))
 
     # method for navigate to url
     def navigate_to_url(self):

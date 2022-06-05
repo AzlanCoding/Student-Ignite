@@ -1,4 +1,4 @@
-# echo-server.py
+'''# echo-server.py
 
 import socket
 
@@ -16,3 +16,11 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             if not data:
                 break
             conn.sendall(data)
+'''
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def index():
+    return "Hello World!"

@@ -67,7 +67,7 @@ def proxy(browser_conn, client_addr):
     
     def response(status,message):
         reply = "HTTP/1.1 {0} {1}\r\n"
-        reply += "Proxy-agent: Pcxy\r\n"
+        reply += "Proxy-agent: Sinktrap\r\n"
         reply += "\r\n"
         reply = reply.format(status,message);
         #pdb.set_trace()
@@ -186,6 +186,10 @@ def proxy(browser_conn, client_addr):
         csv_logger.info("blocked",extra=req);
         thread_logger.warn("Block REQUEST:{0}".format(raw_data),extra=req);
         response(403,"The website has been blocked by Ignite's proxy.")
+        #Breq = req
+        #Breq['host'] = "azlancoding.github.io/Blocked"
+        #proxy_https(Breq)
+        #response(307,"https://azlancoding.github.io/BLOCKED")
         return
 
     csv_logger.info("allowed",extra=req);

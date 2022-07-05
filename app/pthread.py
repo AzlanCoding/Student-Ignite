@@ -27,17 +27,17 @@ def proxy(browser_conn, client_addr):
         print(str(host))
         access_logger.info(str(host))
         if host.split('.')[-1].isdigit():
-            thread_logger.warn("Invalid host:".format(host),extra=req);            
-            return False
+            thread_logger.warn("Invalid host:".format(host),extra=req)            
+            return core.check_allow(host)
         #pdb.set_trace()
         tags=tag_store.get(host)
         if not tags:
-            thread_logger.warn("{0} isn't allowed: empty tags".format(host),extra=req);            
-            return False
+            thread_logger.warn("{0} isn't allowed: empty tags".format(host),extra=req)            
+            return core.check_allow(host)
         for tag in tag_store.get(host):
             if not rule.isTagAllowed(tag):
-                thread_logger.warn("{0}:{1} isn't allowed".format(host,tag),extra=req);
-                return False
+                thread_logger.warn("{0}:{1} isn't allowed".format(host,tag),extra=req)
+                return core.check_allow(host)
         return core.check(host)
 
     def proxy_http(request):

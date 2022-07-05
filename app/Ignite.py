@@ -11,6 +11,17 @@ class flame:
     import temp
   def get_blocklist(self):
     return ["www.discord.com","discord.com"]
+  def get_allowlist(self):
+    return ["cfl.dropboxstatic.com","www.thisweeknews.com"]
+  def check_allow(self,host):
+    print(host)
+    self.ignite_logger.warn(str(host))
+    allow = self.get_allowlist()
+    for items in allow:
+      if items == host:
+        print("Allow")
+        return True
+    return False
   def check(self,host):
     print(host)
     self.ignite_logger.warn(str(host))

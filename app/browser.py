@@ -36,6 +36,7 @@ class MainWindow(QMainWindow):
             cache.close()
             del cache
         except FileNotFoundError:
+            url = "None"
             pass
 
         #reset cache file
@@ -208,7 +209,9 @@ class MainWindow(QMainWindow):
                 return
 
         # else remove the tab
+        page = self.tabs.widget(i)
         self.tabs.removeTab(i)
+        page.deleteLater()
 
     # method for updating the title
     def update_title(self, browser):
@@ -269,5 +272,5 @@ app.setApplicationName("Ignite Browser")
 window = MainWindow()
 
 # loop
-pid1 = subprocess.Popen([sys.executable, "temp.pyw"])
+pid1 = subprocess.Popen([sys.executable, "temp.pyw"])#starts the proxy
 app.exec()

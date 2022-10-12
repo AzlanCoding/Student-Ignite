@@ -469,7 +469,7 @@
               </font>
              </property>
              <property name="text">
-              <string>TBC</string>
+              <string>Projects</string>
              </property>
              <property name="popupMode">
               <enum>QToolButton::InstantPopup</enum>
@@ -591,6 +591,9 @@
         <width>0</width>
         <height>1187</height>
        </size>
+      </property>
+      <property name="title">
+       <string/>
       </property>
      </widget>
     </item>

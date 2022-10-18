@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/Student-Ignite2/">
+    <file alias="main.qml">D:/Github/Student-Ignite/Qt Projects/Student-Ignite2/main.qml</file>
+  </qresource>
+</RCC>
+

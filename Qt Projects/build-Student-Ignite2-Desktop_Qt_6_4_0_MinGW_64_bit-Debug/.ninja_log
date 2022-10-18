@@ -1,0 +1,37 @@
+# ninja log v5
+32	125	6875154243355186	Student-Ignite2/main.qml	249c3ab7ac1da3a2
+32	125	6875154243355186	D:/Github/Student-Ignite/Qt Projects/build-Student-Ignite2-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/Student-Ignite2/main.qml	249c3ab7ac1da3a2
+3	499	6875154247065191	.rcc/qmlcache/appStudent-Ignite2_qmlcache_loader.cpp	c2b8c636e9fbe489
+3	499	6875154247065191	D:/Github/Student-Ignite/Qt Projects/build-Student-Ignite2-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.rcc/qmlcache/appStudent-Ignite2_qmlcache_loader.cpp	c2b8c636e9fbe489
+18	528	6875154247225188	.qt_plugins/Qt6_QmlPlugins_Imports_appStudent-Ignite2.cmake	bee4ada04039601f
+18	528	6875154247225188	D:/Github/Student-Ignite/Qt Projects/build-Student-Ignite2-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qt_plugins/Qt6_QmlPlugins_Imports_appStudent-Ignite2.cmake	bee4ada04039601f
+499	1044	6875154249825189	appStudent-Ignite2_autogen/timestamp	4b6b52c3f5924fde
+499	1044	6875154249825189	appStudent-Ignite2_autogen/mocs_compilation.cpp	4b6b52c3f5924fde
+499	1044	6875154249825189	D:/Github/Student-Ignite/Qt Projects/build-Student-Ignite2-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/appStudent-Ignite2_autogen/timestamp	4b6b52c3f5924fde
+499	1044	6875154249825189	D:/Github/Student-Ignite/Qt Projects/build-Student-Ignite2-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/appStudent-Ignite2_autogen/mocs_compilation.cpp	4b6b52c3f5924fde
+1072	1232	6875154254235198	.rcc/qrc_appStudent-Ignite2_raw_qml_0.cpp	11dca9176274a53a
+1072	1232	6875154254235198	D:/Github/Student-Ignite/Qt Projects/build-Student-Ignite2-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.rcc/qrc_appStudent-Ignite2_raw_qml_0.cpp	11dca9176274a53a
+1060	1237	6875154254315195	.rcc/qrc_qmake_Student-Ignite2.cpp	5e323b251bf0836c
+1060	1237	6875154254315195	D:/Github/Student-Ignite/Qt Projects/build-Student-Ignite2-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.rcc/qrc_qmake_Student-Ignite2.cpp	5e323b251bf0836c
+1045	1288	6875154255015183	meta_types/appStudent-Ignite2_json_file_list.txt	fd1435d421b9e45b
+1045	1288	6875154255015183	meta_types/appStudent-Ignite2_json_file_list.txt.timestamp	fd1435d421b9e45b
+1045	1288	6875154255015183	D:/Github/Student-Ignite/Qt Projects/build-Student-Ignite2-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/meta_types/appStudent-Ignite2_json_file_list.txt	fd1435d421b9e45b
+1045	1288	6875154255015183	D:/Github/Student-Ignite/Qt Projects/build-Student-Ignite2-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/meta_types/appStudent-Ignite2_json_file_list.txt.timestamp	fd1435d421b9e45b
+1288	1432	6875154256445194	meta_types/qt6appstudent-ignite2_debug_metatypes.json.gen	47d253e305ce7362
+1288	1432	6875154256445194	meta_types/qt6appstudent-ignite2_debug_metatypes.json	47d253e305ce7362
+1288	1432	6875154256445194	D:/Github/Student-Ignite/Qt Projects/build-Student-Ignite2-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/meta_types/qt6appstudent-ignite2_debug_metatypes.json.gen	47d253e305ce7362
+1288	1432	6875154256445194	D:/Github/Student-Ignite/Qt Projects/build-Student-Ignite2-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/meta_types/qt6appstudent-ignite2_debug_metatypes.json	47d253e305ce7362
+1432	1704	6875154258305199	appstudent-ignite2_qmltyperegistrations.cpp	6127608304a26c03
+1432	1704	6875154258305199	Student-Ignite2/appStudent-Ignite2.qmltypes	6127608304a26c03
+1432	1704	6875154258305199	D:/Github/Student-Ignite/Qt Projects/build-Student-Ignite2-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/appstudent-ignite2_qmltyperegistrations.cpp	6127608304a26c03
+1432	1704	6875154258305199	D:/Github/Student-Ignite/Qt Projects/build-Student-Ignite2-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/Student-Ignite2/appStudent-Ignite2.qmltypes	6127608304a26c03
+1704	1944	6875154261495181	.rcc/qmlcache/appStudent-Ignite2_main_qml.cpp	20b9788a07744a37
+1704	1944	6875154261495181	D:/Github/Student-Ignite/Qt Projects/build-Student-Ignite2-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.rcc/qmlcache/appStudent-Ignite2_main_qml.cpp	20b9788a07744a37
+1957	2354	6875154265425198	CMakeFiles/appStudent-Ignite2.dir/appStudent-Ignite2_autogen/mocs_compilation.cpp.obj	c82fe0d478cc707c
+1991	2474	6875154266435201	CMakeFiles/appStudent-Ignite2.dir/.rcc/qrc_qmake_Student-Ignite2.cpp.obj	b67c5903fbdc4492
+2050	2608	6875154267495190	CMakeFiles/appStudent-Ignite2.dir/.rcc/qrc_appStudent-Ignite2_raw_qml_0.cpp.obj	4d8774770bb962bf
+1944	8441	6875154326136513	CMakeFiles/appStudent-Ignite2.dir/appstudent-ignite2_qmltyperegistrations.cpp.obj	732fa80726fa0924
+1969	8826	6875154330356862	CMakeFiles/appStudent-Ignite2.dir/main.cpp.obj	ffc1ad9128ac3210
+2355	9150	6875154333616957	CMakeFiles/appStudent-Ignite2.dir/.rcc/qmlcache/appStudent-Ignite2_main_qml.cpp.obj	38632c40aad2c06f
+2004	10010	6875154342227324	CMakeFiles/appStudent-Ignite2.dir/.rcc/qmlcache/appStudent-Ignite2_qmlcache_loader.cpp.obj	1feff9de3bc0391f
+10011	10543	6875154347477300	appStudent-Ignite2.exe	971b9262889b065

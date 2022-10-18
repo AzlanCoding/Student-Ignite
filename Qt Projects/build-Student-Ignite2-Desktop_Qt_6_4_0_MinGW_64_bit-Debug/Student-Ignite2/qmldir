@@ -1,0 +1,4 @@
+module Student-Ignite2
+typeinfo appStudent-Ignite2.qmltypes
+prefer :/Student-Ignite2/
+

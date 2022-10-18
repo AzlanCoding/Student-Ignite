@@ -1,0 +1,8 @@
+# ninja log v5
+3	64	0	D:/Github/Student-Ignite/Qt Project/build-Student-Ignite-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	2aa248b69e58c434
+2	2279	6875147655236599	Student-Ignite_autogen/timestamp	49557a0e286c2026
+2	2279	6875147655236599	Student-Ignite_autogen/mocs_compilation.cpp	49557a0e286c2026
+2	2279	6875147655236599	D:/Github/Student-Ignite/Qt Project/build-Student-Ignite-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/Student-Ignite_autogen/timestamp	49557a0e286c2026
+2	2279	6875147655236599	D:/Github/Student-Ignite/Qt Project/build-Student-Ignite-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/Student-Ignite_autogen/mocs_compilation.cpp	49557a0e286c2026
+2279	6761	6875147702827654	CMakeFiles/Student-Ignite.dir/Student-Ignite_autogen/mocs_compilation.cpp.obj	c6810cf97bea4f8e
+2290	6782	6875147703037607	CMakeFiles/Student-Ignite.dir/main.cpp.obj	2223c5191deae832

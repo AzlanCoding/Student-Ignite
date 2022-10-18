@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/Student-Ignite2">
+    <file alias="qmldir">D:/Github/Student-Ignite/Qt Projects/build-Student-Ignite2-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/Student-Ignite2/qmldir</file>
+  </qresource>
+</RCC>
+

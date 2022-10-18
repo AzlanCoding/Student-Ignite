@@ -1,0 +1,160 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-0b4f562d6c17acdfa99b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Student-Ignite2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-b48d9f17999b74999ae5.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-18f55c934648514649fa.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-664660d23fc1991632b3.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appStudent-Ignite2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appStudent-Ignite2-Debug-77d9c82a14dc840cd9c9.json",
+					"name" : "appStudent-Ignite2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appStudent-Ignite2_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appStudent-Ignite2_autogen-Debug-347261d576b707328ec1.json",
+					"name" : "appStudent-Ignite2_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appStudent-Ignite2_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appStudent-Ignite2_autogen_timestamp_deps-Debug-36ffdb38ebc17e91a333.json",
+					"name" : "appStudent-Ignite2_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appStudent-Ignite2_other_files::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appStudent-Ignite2_other_files-Debug-4cf812848f1a857d9a54.json",
+					"name" : "appStudent-Ignite2_other_files",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appStudent-Ignite2_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appStudent-Ignite2_qmlimportscan-Debug-e63081625c276c374728.json",
+					"name" : "appStudent-Ignite2_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appStudent-Ignite2_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appStudent-Ignite2_qmllint-Debug-3ccb235209318cab89f2.json",
+					"name" : "appStudent-Ignite2_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appStudent-Ignite2_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appStudent-Ignite2_qmllint_json-Debug-18e0104175ab18c6e74e.json",
+					"name" : "appStudent-Ignite2_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appStudent-Ignite2_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appStudent-Ignite2_qmltyperegistration-Debug-a55d80805966b3b40f0d.json",
+					"name" : "appStudent-Ignite2_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appStudent-Ignite2_tooling::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appStudent-Ignite2_tooling-Debug-af6410030b7ef98b8461.json",
+					"name" : "appStudent-Ignite2_tooling",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Github/Student-Ignite/Qt Projects/build-Student-Ignite2-Desktop_Qt_6_4_0_MinGW_64_bit-Debug",
+		"source" : "D:/Github/Student-Ignite/Qt Projects/Student-Ignite2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

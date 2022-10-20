@@ -1,7 +1,7 @@
 # code from https://www.geeksforgeeks.org/creating-a-tabbed-browser-using-pyqt5/
 #Code modified by Azlan Chenlong
 # importing required libraries
-
+from PyQt6 import *
 from PyQt6.QtCore import *
 from PyQt6.QtWidgets import *
 from PyQt6.QtGui import *
@@ -25,7 +25,7 @@ class MainWindow(QMainWindow):
         proxy =  QtNetwork.QNetworkProxy()
         proxy.setType(QtNetwork.QNetworkProxy.ProxyType.HttpProxy)
         proxy.setHostName("localhost")
-        proxy.setPort(8088)
+        proxy.setPort(8080)
         QtNetwork.QNetworkProxy.setApplicationProxy(proxy)
 
         #Check Cache for url
@@ -272,5 +272,5 @@ app.setApplicationName("Ignite Browser")
 window = MainWindow()
 
 # loop
-pid1 = subprocess.Popen([sys.executable, "temp.pyw"])#starts the proxy
+#pid1 = subprocess.Popen([sys.executable, "temp.pyw"])#starts the proxy
 app.exec()

@@ -1,7 +1,0 @@
-PyFlakes==2.4.0
-Werkzeug==0.15.0
-certifi==0.0.8
-chardet==1.0.1
-gunicorn==19.0.0
-requests==0.11.1
-Flask==1.1.2
